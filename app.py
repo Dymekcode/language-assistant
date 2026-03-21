@@ -35,10 +35,6 @@ def copy_to_clipboard_button(text_to_copy):
         height=60,
     )
 
-env = dotenv_values(".env")
-
-client = OpenAI(api_key=env["OPENAI_API_KEY"])
-
 
 st.markdown("""
 <style>
