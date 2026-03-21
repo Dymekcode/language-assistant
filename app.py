@@ -1,9 +1,14 @@
+import os
 import streamlit as st
 from openai import OpenAI
-from dotenv import dotenv_values
+from dotenv import load_dotenv
 import streamlit.components.v1 as components
 
 MAX_CHARS = 300
+
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 def copy_to_clipboard_button(text_to_copy):
     components.html(
