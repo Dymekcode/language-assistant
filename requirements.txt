@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 streamlit
 openai==1.68.2
 python-dotenv
+=======
+streamlit
+openai==1.68.2
+python-dotenv
+>>>>>>> 781f2bfc0da450104c4ccf11e897659815ff4608
